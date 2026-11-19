@@ -8,5 +8,8 @@ class TestHomePage(SimpleTestCase):
         self.assertContains(response, 'HELLO')  # Or the message your app displays 
 
 
+    def test_hello_page_smiley_face(self):
+        response = self.client.get(reverse('hello'))
+        self.assertContains(response, ':)')
 
 
