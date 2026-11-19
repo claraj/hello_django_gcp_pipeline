@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - name: Check out code 
-        uses: actions/checkout@v4 
+        uses: actions/checkout@v7
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -45,7 +45,7 @@ jobs:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
 
       - name: Deploy to App Engine
-        uses: google-github-actions/deploy-appengine@v7
+        uses: google-github-actions/deploy-appengine@v3
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           deliverables: app.yaml
