@@ -6,4 +6,4 @@ class TestHomePage(SimpleTestCase):
 
     def test_hello_page_message(self):
         response = self.client.get(reverse('hello'))
-        self.assertContains(response, 'Hello')
+        self.assertContains(response, 'HELLO')
