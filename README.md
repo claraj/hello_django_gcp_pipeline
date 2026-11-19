@@ -24,12 +24,12 @@ Create new credentials file. Make sure you DON'T add this file to your GitHub re
 
 ## Set up repository secrets 
 
-In GitHub setttings, Security > Secrets and variables > Actions 
+In GitHub settings, Security > Secrets and variables > Actions 
 
 Create two new repository secrets, 
 
-GCP_PROJECT_ID, value is your project ID 
-GCP_SA_KEY, value is the text from your credential file 
+GCP_PROJECT_ID, value is your project ID
+GCP_SERVICE_ACCOUNT_KEY, value is the text from your credential file 
 
 ## Create .github/workflows/deploy.yaml file 
 
